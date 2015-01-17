@@ -1,0 +1,19 @@
+body{
+text-align: center;
+}
+
+h1{
+font-family: 'MedievalSharp', cursive;
+text-transform: uppercase;
+margin-bottom: -5px;
+}
+
+h2{
+font-family: 'MedievalSharp', cursive;
+text-transform: uppercase;
+}
+
+#about{
+width:600px;
+margin:auto;
+}
