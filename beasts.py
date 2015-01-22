@@ -108,9 +108,9 @@ class Beast():
         
         ground = self.replace_words("Can be found in the *geofeature* of *geolocation*.")
         
-        self.output = "<div>"
-        self.output = self.output + aniImage
-        self.output = self.output + "</div>"
+	self.output = "<div>"
+	self.output = self.output + aniImage
+	self.output = self.output + "</div>"
         self.output = self.output + "<h2>----- "+beastname+" -----</h2>"
         self.output = self.output + desc1 + desc2 + desc3 + "<br/><br/>"
         self.output = self.output + "<h2>----- ORIGIN -----</h2>"
