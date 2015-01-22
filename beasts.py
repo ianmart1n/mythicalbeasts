@@ -120,7 +120,7 @@ class Beast():
         self.output = self.output + "<h2>----- NATURE -----</h2>"
         self.output = self.output + nature + "<br/><br/>"
         self.output = self.output + "<h2>----- DIET -----</h2>"
-        self.output = self.output + diet + diet2 + "<br/><br/>"
+        self.output = self.output + diet + "<br/><br/>"
         self.output = self.output + "<h2>----- HUNTING GROUNDS -----</h2>"
         self.output = self.output + ground + "<br/><br/>"
 
