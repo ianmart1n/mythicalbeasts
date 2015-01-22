@@ -63,7 +63,7 @@ class Beast():
             if m:
                 word = m.group(1)
                 replacer = "*"+word+"*"
-                string = string.replace(replacer, random.choice(self.sourceDb[word]))
+                string = string.replace(replacer, random.choice(self.sourceDb[word]),1)
         return string
 
     def make_image(self, string1, string2, string3):
@@ -104,14 +104,13 @@ class Beast():
         nature = nature + "<br/><br/>"
         nature = nature + self.replace_words("It spends its days *habit*. It yearns to *desire*.")
         
-        diet = self.replace_words(beastname+"s *adverb* eat *food*")
-        diet2 = self.replace_words(" and *food*.")
+        diet = self.replace_words(beastname+"s *adverb* eat *food* and *food*.")
         
         ground = self.replace_words("Can be found in the *geofeature* of *geolocation*.")
         
-	self.output = "<div>"
-	self.output = self.output + aniImage
-	self.output = self.output + "</div>"
+	    self.output = "<div>"
+	    self.output = self.output + aniImage
+	    self.output = self.output + "</div>"
         self.output = self.output + "<h2>----- "+beastname+" -----</h2>"
         self.output = self.output + desc1 + desc2 + desc3 + "<br/><br/>"
         self.output = self.output + "<h2>----- ORIGIN -----</h2>"
